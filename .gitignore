@@ -1,0 +1,16 @@
+*.Rproj
+.Rproj.user
+.Rhistory
+.RData
+.RDataTmp
+*csv
+*txt
+*xls
+*xlsx
+*/*cache/
+*/*files/
+*pdf
+*tex
+*zip
+*png
+.httr-oauth

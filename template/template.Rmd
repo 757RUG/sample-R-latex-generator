@@ -1,0 +1,54 @@
+---
+title: "The Main Title of this paper"
+subtitle: "A Custom Project For XYZ Research"
+author: "Your Name Here"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    fig_height: 3.5
+    fig_width: 5
+    keep_tex: yes
+    latex_engine: xelatex
+    template: ../latex-template.tex
+---
+
+This is the template for a producing a long form paper or article. This text will go below the title and above
+the first section heading.
+
+Top-Level Section Heading
+================
+
+The formatting is done in Markdown.
+
+You can write LaTeX: $\LaTeX \sum_1^pi a^2$
+
+And you can write full equations using the double-dollar sign notation:
+
+$$ \alpha \subset \beta + \Sigma + \frac{pi = 3.14152}{\text{eleven}} $$
+
+Second-level heading
+---------
+
+Here is how to create a hierarchy of sections within your paper.
+
+Embedding R Code
+-----------
+
+You can calculate numbers on the fly $2+3$ = `r 2+3`.
+
+Use the `knitr::kable` function in an `asis` block to make nice tables:
+
+```{r toprows}
+knitr::kable(head(cars))
+```
+
+And use markup to make plain-text show up in a nice box:
+
+```{r summary, results='markup'}
+print(summary(cars))
+```
+
+```{r plotting, message=FALSE}
+plot(cars)
+```
+
