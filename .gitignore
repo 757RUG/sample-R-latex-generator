@@ -9,8 +9,6 @@
 *xlsx
 */*cache/
 */*files/
-*pdf
-*tex
 *zip
 *png
 .httr-oauth
